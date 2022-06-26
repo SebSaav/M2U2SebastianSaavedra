@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <title>Actividad 2 Entregable</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' type = 'text/css' href="style.css">
+    <link rel="logoFIMLM" href="https://marialuisa.foundation/wp-content/uploads/2020/02/logoMLMIF-1-150x150.png">
+</head>
+<body>
+    <center> 
+      <p style = "background:#c2f3f3; color:black; font-weight:bold; padding:15px; border:3px solid black;">Ejercicio 1</p>
+      <form method = "get"> 
+          <p>Nombre del Estudiante: <input type = "text" id = "nombreEstudiante" autocomplete = "off" size = "32" placeholder = "Escriba el nombre del estudiante" required></p>
+          <p>Número de materias: <input type = "number" id = "numMaterias" min = 1 max = 4 placeholder="1-4" required></p>
+          <p>Materia 1: <input type = "number" id = "mat1" class = "input" min = 1 placeholder = "Valor 1" required></p>
+          <p>Materia 2: <input type = "number" id = "mat2" class = "input" min = 1 placeholder = "Valor 2" required></p>
+          <p>Materia 3: <input type = "number" id = "mat3" class = "input" min = 1 placeholder = "Valor 3" required></p>
+          <p>Materia 4: <input type = "number" id = "mat4" class = "input" min = 1 placeholder = "Valor 4" required></p>
+          <p>
+            <button type = "button" id = "submitButton" class = "submit-btn" onclick = "Resultados()">Enviar</button>
+            <button type = "reset" id = "resetButton" class = "submit-btn" onclick = "BorrarDiv()">Borrar</button>
+          </p>
+      </form>
+      <p>
+        <table>
+        <tr>
+          <td><strong>Valor Papeleria</strong></td>
+          <td><strong>$ 20.000</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Valor Carné</strong></td>
+          <td><strong>$ 8.000</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Descuento Costo Materias</strong></td>
+          <td><strong>20 %</strong></td>
+        </tr>
+      </table>
+    </p>
+    <div id = "info"></div>
+      <p style = "background:#c2f3f3; color:black; font-weight:bold; padding:15px; border:3px solid black;">Ejercicio 2</p>
+      <form action = "ejemplo.php" method = "get">
+        <p>Valor A: <input type = "number" id = "valA" class = "input" placeholder = "Valor A"></p>
+        <p>Valor B: <input type = "number" id = "valB" class = "input" placeholder = "Valor B"></p>
+        <p>Valor C: <input type = "number" id = "valC" class = "input" placeholder = "Valor C"></p>
+        <p>Valor D: <input type = "number" id = "valD" class = "input" placeholder = "Valor D"></p>
+        <p>
+          <button type = "button" id = "submitButton" class = "submit-btn" onclick = "Resultados2()">Enviar</button>
+          <button type = "reset" id = "resetButton" class = "submit-btn" onclick = "BorrarMayoryMenor()">Borrar</button>
+        </p>
+      </form>
+      <div id = "mayor"></div>
+      <div id = "menor"></div>
+  </center>
+</body>
+<script src="index.js"></script>    
+</html>
